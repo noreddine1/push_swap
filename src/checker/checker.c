@@ -6,7 +6,7 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/10 12:57:16 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/11 14:50:10 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 11:10:33 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,12 @@ void	checker(t_stack	*a, t_stack *b)
 	char	*str;
 
 	str = get_next_line(0);
-	ft_g_collector(str, MALLOC);
+	ft_g_collector(str, MALLOCED);
 	while (str)
 	{
 		run_opr(a, b, str);
 		str = get_next_line(0);
-		ft_g_collector(str, MALLOC);
+		ft_g_collector(str, MALLOCED);
 	}
 }
 

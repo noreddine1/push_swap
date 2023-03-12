@@ -6,7 +6,7 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 16:30:52 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/07 22:04:30 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:04:17 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,16 +98,3 @@ t_list	*pop_bottom(t_stack *stack)
 	stack->size -= 1;
 	return (ret);
 }
-
-// void	print_stck(t_stack *stack)
-// {
-// 	t_list	*top;
-
-// 	top = stack->top;
-// 	puts("-----");
-// 	while (top)
-// 	{
-// 		printf("%d\n", top->data);
-// 		top = top->prev;
-// 	}
-// }

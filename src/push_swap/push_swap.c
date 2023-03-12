@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/19 05:04:15 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/10 13:07:43 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:01:58 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 #include <stdlib.h>
 
 int	main(int ac, char **av)
@@ -27,10 +27,7 @@ int	main(int ac, char **av)
 	if (args == NULL)
 		ft_error();
 	if (check(args, &stack_a) == 0)
-	{
 		ft_error();
-		free(args);
-	}
 	if (ft_is_sorted(&stack_a) == 1)
 		exit(0);
 	sort(&stack_a, &stack_b);

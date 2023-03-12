@@ -6,7 +6,7 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/19 16:30:15 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/12 09:59:02 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 15:51:12 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,19 +53,18 @@ static int	check_(t_stack *stack, t_lst **map, char **args, int count)
 		value = malloc(sizeof(int));
 		index = hash(*args, value, count);
 		if (check_string_value(*args, *value) == 0)
-			return (0);
+			return (free(value), 0);
 		if (map[index] == NULL)
 			map[index] = ft_lstnew(value);
 		else
 		{
 			if (check_double(map[index], *value) == 0)
-				return (0);
+				return (free(value), 0);
 			ft_lstadd_back(&map[index], ft_lstnew(value));
 		}
 		node = ft_create_node(*value);
-		ft_g_collector(node, MALLOC);
+		ft_g_collector(node, MALLOCED);
 		push_bottom(stack, node);
-		ft_g_collector(*args, MALLOC);
 		args++;
 	}
 	return (1);

@@ -6,7 +6,7 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/10 13:04:02 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/11 14:50:24 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 13:43:34 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,18 @@ char	**ft_get_args(char **args)
 		if (args[i][j] == 0)
 			return (NULL);
 		join = ft_strjoin(join, args[i]);
-		ft_g_collector(join, MALLOC);
+		ft_g_collector(join, MALLOCED);
 	}
 	args = ft_split(join, ' ');
+	i = 0;
+	while (args[i])
+		ft_g_collector(args[i++], MALLOCED);
 	return (args);
 }
 
 void	ft_error(void)
 {
-	ft_putstr_fd("Error", 2);
+	ft_putendl_fd("Error", 2);
 	ft_g_collector(NULL, FREE);
 	exit(1);
 }
@@ -46,6 +49,8 @@ int	ft_is_sorted(t_stack *stack)
 	t_list	*first;
 	t_list	*second;
 
+	if (stack->size == 0)
+		return (0);
 	first = stack->top;
 	second = first->prev;
 	while (second != 0)
