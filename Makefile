@@ -6,12 +6,12 @@
 #    By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/25 06:39:56 by nmaazouz          #+#    #+#              #
-#    Updated: 2023/03/11 14:31:19 by nmaazouz         ###   ########.fr        #
+#    Updated: 2023/03/12 10:10:46 by nmaazouz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC		= cc
-CFLAGS	= -Wall -Werror -Wextra
+CFLAGS	= -Wall -Werror -Wextra -g
 NAME	= push_swap
 NAME_B = checker
 INCS = -I ./includes

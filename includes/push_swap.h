@@ -6,7 +6,7 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:47:21 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/10 13:08:32 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 13:43:26 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 typedef enum e_type_rotate{rev_rotate, rotate}	t_type_rotate;
 typedef enum e_bool{FALSE, TRUE}	t_bool;
-typedef enum e_g_type{MALLOC,FREE}	t_g_type;
+typedef enum e_g_type{MALLOC, MALLOCED,FREE}	t_g_type;
 enum e_twoo_number_is{negative, positive, defferent};
 
 typedef struct s_list	t_list;

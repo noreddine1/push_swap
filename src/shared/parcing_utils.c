@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 13:39:27 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/06 13:41:56 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 15:58:35 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 #include <limits.h>
 
 int	check_string_value(char *str, long int value)
@@ -22,6 +22,8 @@ int	check_string_value(char *str, long int value)
 		return (0);
 	if (str[i] == '-' || str[i] == '+')
 		i++;
+	if (!str[i])
+		return (0);
 	while (str[i])
 	{
 		if (ft_isdigit(str[i]) == 0)
