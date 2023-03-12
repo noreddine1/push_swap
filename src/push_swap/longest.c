@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 15:22:04 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/07 21:58:29 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:06:04 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 static int	ft_get_index_max_order(t_list	**tab, int size)
 {

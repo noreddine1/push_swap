@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/25 02:49:24 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/09 10:40:41 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:06:28 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 t_list	*get_node_of_next_order(t_stack *a, int order)
 {

@@ -6,7 +6,7 @@
 #    By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/25 06:39:56 by nmaazouz          #+#    #+#              #
-#    Updated: 2023/03/12 10:10:46 by nmaazouz         ###   ########.fr        #
+#    Updated: 2023/03/12 16:03:03 by nmaazouz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -91,6 +91,6 @@ clean:
 			@make -s -C libft/ clean
 
 fclean:	clean
-		@rm -f $(NAME)
+		@rm -f $(NAME) $(NAME_B)
 
 re: clean all

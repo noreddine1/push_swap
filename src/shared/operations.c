@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 23:53:36 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/11 14:38:55 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:06:42 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 void	ft_swap(t_stack *stack, char c)
 {

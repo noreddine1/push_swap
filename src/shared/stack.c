@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 16:30:52 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/12 16:04:17 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:06:56 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 t_list	*ft_create_node(int data)
 {

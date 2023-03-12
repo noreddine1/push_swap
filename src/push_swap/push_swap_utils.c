@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 12:56:57 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/11 14:35:59 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:06:12 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 t_list	**stack_to_table(t_stack *stack, t_list *node)
 {

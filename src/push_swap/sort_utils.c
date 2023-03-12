@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 22:11:16 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/09 10:27:13 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:06:22 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 static int	twoo_number_is(int x, int y)
 {

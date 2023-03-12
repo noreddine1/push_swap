@@ -6,11 +6,11 @@
 /*   By: nmaazouz <nmaazouz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 13:20:25 by nmaazouz          #+#    #+#             */
-/*   Updated: 2023/03/12 15:53:49 by nmaazouz         ###   ########.fr       */
+/*   Updated: 2023/03/12 16:06:34 by nmaazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 void	free_hash_set(t_lst **map, char **args, int count)
 {
